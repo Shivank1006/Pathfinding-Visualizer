@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pathfinding Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="libraries/p5.js"></script>
+  <script src="Astar.js"></script>
+  <script src="BFS.js"></script>
+  <script src="DFS.js"></script>
+  <script src="sketch.js"></script>
+  <script src="spot.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+	body {
+	  background-image: url('background.jpg');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+	}
+	</style>
+</head>     
+
+<body>
+  <div>
+    <select id="mySelect">
+      <option value="Astar">A* Algorithm</option>
+      <option value="BFS">Breadth First Search</option>
+      <option value="DFS">Depth First Search</option>
+    </select>
+    <button class="btn success" onclick="JavaScript:startAlgo()">Visualize</button>
+ <!--    <button class="btn info">Visualize</button> -->
+    <button class="btn warning" onclick="JavaScript:clear_Path()">Clear Path</button>
+    <button class="btn danger" onclick="JavaScript:clear_All()">Clear All</button>
+    <button class="btn default" onclick="JavaScript:randomMaze()">Random Maze</button>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    return x;
+  }
+  </script>
+  <p> </p>
+  <div id="canvas"></div>
+</body>
+</html>
