@@ -1,7 +1,7 @@
 # Pathfinding-Visualizer
 Welcome to the Pathfinding Visualizer! This application is a visualization tool for various pathfinding algorithms like A*, BFS, DFS, Dijkstra, etc to visualize them in action. It has different features, like adding walls, random mazes, etc. 
 
-Access it here [Pathfinding Visualizer](https://shivank1006.github.io/Pathfinding-Visualizer/)
+Access it here [Pathfinding Visualizer](https://shivank1006.github.io/Pathfinding-Visualizer/).
 
 ## Algorithms
 The application currently supports following algorithms
